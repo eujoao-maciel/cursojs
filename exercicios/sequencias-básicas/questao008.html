@@ -1,0 +1,46 @@
+    <!DOCTYPE html>
+    <html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Questão 8</title>
+    </head>
+    <body>
+        <input type="number" name="n1" id="n1">
+        <input type="button" value="converter" onclick="clicar()">
+        <div class="km"></div>
+        <div class="hm"></div>
+        <div class="dam"></div>
+        <div class="dm"></div>
+        <div class="cm"></div>
+        <div class="mm"></div>
+        
+
+        <script>
+            var tn1 = document.querySelector('input#n1')
+            var espacokm = document.querySelector('div.km')
+            var espacohm = document.querySelector('div.hm')
+            var espacodam = document.querySelector('div.dam')
+            var espacodm = document.querySelector('div.dm')
+            var espacocm = document.querySelector('div.dm')
+            var espacomm = document.querySelector('div.mm')
+            function clicar() {
+                var n = Number(tn1.value)
+                var km = n/1000
+                var hm  = n/100
+                var dam = n/10
+                var dm = n*10
+                var cm = n*100
+                var mm = n*1000
+                espacokm.innerHTML = `=${km.toFixed(2)} km`
+                espacohm.innerHTML = `=${hm.toFixed(2)} hm`
+                espacodam.innerHTML = `=${dam.toFixed(2)} dam`
+                espacodm.innerHTML = `=${dm.toFixed(2)}dm`
+                espacocm.innerHTML = `=${cm.toFixed(2)}cm`
+                espacomm.innerHTML = `=${mm.toFixed(2)}mm`
+            }
+
+        </script>
+    </body>
+    </html>

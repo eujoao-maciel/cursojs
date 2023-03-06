@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 11</title>
+</head>
+<body>
+    <p>a=<input type="number" name="a" id="a"></p>
+    <p>b=<input type="number" name="b" id="b"></p>
+    <p>c=<input type="number" name="c" id="c"></p>
+    <input type="button" value="res" onclick="click1()">
+    <div class="res"></div>
+    <script>
+        function click1 () {
+            var text_a = document.querySelector('input#a')
+            var text_b = document.querySelector('input#b')
+            var text_c = document.querySelector('input#c')
+            var res = document.querySelector('div.res')
+            var a = Number(text_a.value)
+            var b = Number(text_b.value)
+            var c = Number(text_c.value)
+            var delta = (b**2) - (4*a*c)
+            res.innerHTML = `${b}*2 - 4.${a}.${c}=${delta}`
+        }
+    </script>
+</body>
+</html>

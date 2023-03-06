@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detran</title>
+</head>
+<body>
+    <h1>Sitema de Multas</h1>
+    Velocidade do carro <input type="number" name="txvel" id="txvel"> km/h
+    <input type="button" value="Verificar" onclick="clicar()">
+    <div class="resposta"></div>
+
+    <script>
+        function clicar(){
+            var tvel = document.querySelector('input#txvel')
+            var resposta = document.querySelector('div.resposta')
+            var vel = Number(tvel.value)
+            if (vel > 60) {
+                resposta.innerHTML = 'Você ultrapassou a velocidade limite. MULTADO!!'
+            } else {
+                resposta.innerHTML = 'Você anda na velocidade correta.'
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 13</title>
+</head>
+<body>
+    <input type="number" name="sal" id="sal" placeholder="salário">
+    <input type="button" value="salário atual" onclick="click1()">
+    <div class="res"></div>
+
+    <script>
+        function click1() {
+        var textsal = document.querySelector('input#sal')
+        var sal = Number(textsal.value)
+        var res = document.querySelector('div.res')
+        var newsal = (sal*15/100) + sal
+        res.innerHTML = `O salário atual do funcionario sera ${newsal}`
+        }
+    </script>
+</body>
+</html>

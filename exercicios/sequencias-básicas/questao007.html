@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 07</title>
+</head>
+<body>
+    <input class="n" type="number" name="txtn1" id="txtn1">
+    <input type="button" value="dobro" onclick="clicar1()">
+    <input type="button" value="terça parte" onclick="clicar2()">
+    <div class="duasv"> </div> <br>
+    <div class="tresparte"></div>
+    <script>
+        var tn = document.querySelector("input.n") 
+
+        function clicar1() {
+            var resultado1 = document.querySelector('div.duasv')
+            var n = Number(tn.value)
+            var dobro = n*2
+            resultado1.innerHTML = `${dobro}`
+        }
+
+        function clicar2() {
+            var resultado2 = document.querySelector('div.tresparte')
+            var n2 = Number(tn.value)
+            var tresp = n2/3
+            resultado2.innerHTML = `${tresp}`
+        }
+    </script>
+</body>
+</html>

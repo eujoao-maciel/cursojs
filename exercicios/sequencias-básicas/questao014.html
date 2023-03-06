@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 14</title>
+</head>
+<body>
+    <p>km rodado <input type="number" name= "km" id="tkm"></p>
+    <p>dias alugados <input type="number" name="diasalugados" id="diasalugados"></p>
+    <input type="button" value="verificar" onclick="click1()">
+    <div class="res">
+
+    </div>
+
+    <script>
+        function click1() {
+            var txkm = document.querySelector('input#tkm')
+            var km = Number(txkm.value)
+            var txdias = document.querySelector('input#diasalugados')
+            var dias = Number(txdias.value)
+            var res = document.querySelector('div.res')
+            var valor1 = dias*90
+            var valor2 = km*0.20
+            var valor = valor1 + valor2
+            res.innerHTML = (valor)
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 16</title>
+</head>
+<body>
+    <h1> Dias perdidos por conta do cigarro</h1>
+    <p>Quantos cigarros você fuma diariamente? <input type="number" name="cigarros-por-dia" id="cigarros-por-dia"></p>
+    <p>Há quantos anos você fuma? <input type="number" id="cigarros-por-ano"></p>
+    <input type="button" value="verificar" onclick="verificar()">
+
+    <div id="res">
+
+    </div>
+
+    <script>
+        function verificar() {
+            var txcigarros_por_dia = document.getElementById('cigarros-por-dia')
+            var cigarros_por_dia = Number(txcigarros_por_dia.value)
+            var txcigarros_por_ano = document.getElementById('cigarros-por-ano')
+            var cigarros_por_ano = Number(txcigarros_por_ano.value)
+            var cigarrostot = (cigarros_por_ano*366)*cigarros_por_dia
+            var tempodevida = ((cigarrostot*10)/60)/24
+
+            var res = document.getElementById('res')
+            res.innerHTML = `Você perdeu cerca de ${tempodevida} dias de vida`
+         } 
+    </script>
+</body>
+</html>

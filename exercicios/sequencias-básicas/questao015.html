@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 15
+    </title>
+</head>
+<body>
+    <p>Quantos dias você trabalhou no mes?<input type="number" name="dias" id="dias"></p>
+    <input type="button" value="verificar salário" onclick="verificar()">
+    <div id="res">
+
+    </div>
+
+    <script>
+        function verificar() {
+            var txdias = document.getElementById('dias')
+            var dias = Number(txdias.value)
+            var sal = dias*200 
+            var res = document.getElementById('res')
+            res.innerHTML = `Seu salário do mes foi R$${sal} reais`
+        }
+    </script>
+</body>
+</html>

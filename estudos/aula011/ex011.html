@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de nacionalidade</title>
+</head>
+<body>
+    <h1>Descobrinco sua nacionalidade</h1>
+    <p>Em qual país você nasceu?</p>
+    <input type="text" name="país=" id="pais" placeholder="país">
+    <input type="button" value="teste" onclick="click1()">
+    <div id="resp"> a</div>
+
+    <script>
+        
+        function click1() {
+            var resp = document.getElementById('resp')
+            var pais = document.querySelector('input#pais')
+            if (pais.value === 'brasil') {
+                resp.innerHTML = `Você mora no ${pais.value} e é brasileiro`
+            } else if (pais.value === 'Brasil'){
+                resp.innerHTML = `Você mora no ${pais.value} e é brasileiro`
+            } else {
+                resp.innerHTML = `Você mora no ${pais.value} e é gringo`
+            }
+        }
+    </script>
+</body>
+</html>

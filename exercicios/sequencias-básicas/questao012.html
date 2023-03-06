@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 12</title>
+</head>
+<body>
+    <input type="number" name="price" id="price" placeholder="preço">
+    <input type="button" value="ver com desconto" onclick="click1()">
+    <div class="res"></div>
+    
+    <script>
+        function click1() {
+            var textn = document.querySelector('input#price')
+            var n = Number(textn.value)
+            var res = document.querySelector('div.res')
+            var desconto = n-(n*5/100)
+            res.innerHTML = (desconto)
+        }
+    </script>
+</body>
+</html>

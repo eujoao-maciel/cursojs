@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificadode de idade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Verificador de idade</h1>
+    </header>
+    <main>
+        <div class="info">
+            <p class="ano-de-nascimento">Ano de nascimento
+                <input type="number" name="nascimento" id="nascimento" min="0" max="120"></p>
+            <p class="sexo">Sexo
+                <input type="radio" name="radsex" id="masc">
+                <label for="masc">Masculino</label>
+                <input type="radio" name="radsex" id="fem">
+                <label for="fem">Feminino</label>
+            </p>
+            <input class="btn" type="button" value="verificar" onclick="click1()">
+        </div>
+        <div class="res">
+            Preencha os dados acima para ver o resultado
+        </div>
+    </main>
+    <footer>
+        <p>&copy;Criado por __FRG</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

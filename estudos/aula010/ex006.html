@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM no HTML</title>
+    <style>
+        div#area {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            height: 150px;
+            width: 150px;
+            background-color: brown;
+            color: white;
+            line-height: 150px;
+            text-align: center;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div id="area" onclick="clicou()" onmouseenter="entrou()" onmouseout="saiu()">
+        Interaja...
+    </div>
+    <script>
+        function clicou() {
+            var area = document.querySelector("div#area")
+            area.innerHTML="clicou"
+            area.style.background="blue"
+        }
+
+        function entrou() {
+            var area = document.querySelector("div#area")
+            area.innerHTML="passando o mause"    
+            area.style.background="green"
+        }
+
+        function saiu() {
+            var area = document.querySelector("div#area")
+            area.style.background="white"
+        }
+    </script>
+</body>
+</html>

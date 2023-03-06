@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 9</title>
+</head>
+<body>
+    <p>Qual é o seu nome? <input type="text" name="nome" id="nome"></p>
+    <input type="button" value="prox" onclick="clicar1 ()">
+    <p>Qual é o seu salario? <input type="number" name="sal" id="sal"></p>
+    <input type="button" value="ir" onclick="clicar2 ()">
+    <div class="res"></div>
+
+    <script>
+        function clicar1 () {
+            var nome = document.querySelector('input#nome')
+        }
+
+        function clicar2 () {
+            var textsal = document.querySelector('input#sal')
+            var sal = Number(textsal.value)
+            var dollar = sal/3
+            var res = document.querySelector('div.res')
+            res.innerHTML = `NOME: ${nome.value} <br> SALARIO EM DOLLAR: US$${dollar}`     
+        }
+    </script>
+</body>
+</html>

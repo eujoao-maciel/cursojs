@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 10</title>
+</head>
+<body>
+    <input type="number" name="hight" id="hight" placeholder="altura" onclick=""><br>
+    <input type="number" name="width" id="width" placeholder="comprimento"> <br>
+    <input type="button" value="enviar" onclick="click1()">
+    <div></div>
+
+    <script>
+        function click1() {
+            var texthight = document.querySelector('input#hight')
+            var textwidth = document.querySelector('input#width')
+            var res = document.querySelector('div')
+            var hight = Number(texthight.value)
+            var width = Number(textwidth.value)
+            var area = hight*width
+            var tinta = area/2
+            res.innerHTML = `A área da parede é de ${area} metros quadrados. <br> Serão necessarios ${tinta} baldes de tinta para pintar a parede`
+        }
+    </script>
+</body>
+</html>
