@@ -1,0 +1,30 @@
+
+body {
+    font: normal 1.5em arial;
+    background-color: rgb(194, 7, 7);
+}
+
+header {    
+    text-align: center;
+    font-size: 2em;
+    font-weight: 600;
+    color: white;
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.404);
+}
+
+main {
+    width: 500px;
+    background-color: white;
+    border-radius: 8px;
+    padding: 8px;
+    margin: auto;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.315);
+}
+
+footer {
+    text-align: center;
+    padding-top: 12px;
+    color: white;
+    font-style: italic;
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.336);
+}
